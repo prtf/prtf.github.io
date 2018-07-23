@@ -1,0 +1,66 @@
+<svg id="settings" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #a8b2c4;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e92b2b;
+      }
+
+      .cls-4 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <g id="spanner">
+    <path class="cls-1" d="M1094,1132a15.992,15.992,0,0,1-31.98.32l-62.711-62.7,16.311-16.31,62.7,62.71A15.984,15.984,0,0,1,1094,1132Z" transform="translate(-966 -1020)"/>
+    <circle class="cls-2" cx="112" cy="112" r="8"/>
+    <path id="Ellipse_11_copy" data-name="Ellipse 11 copy" class="cls-1" d="M1006.62,1084l-32-8.61-8.614-32,23.382-23.38,32,8.62,8.61,31.99Zm-35.87-45.35,13.9-13.9,23.387,22.38-13.908,13.91Z" transform="translate(-966 -1020)"/>
+  </g>
+  <g id="screw_driver" data-name="screw driver">
+    <path id="Rectangle_6_copy_6" data-name="Rectangle 6 copy 6" class="cls-1" d="M987,1138l-13.5,10-7.5-7.69L976,1127l12.5-9,7.5,7.69Z" transform="translate(-966 -1020)"/>
+    <path class="cls-3" d="M1089,1046.07l0.07,0.06L1048,1086l-26,7,6-27,40.87-40.07,0.06,0.07A14.236,14.236,0,1,1,1089,1046.07Z" transform="translate(-966 -1020)"/>
+    <path class="cls-1" d="M1034.98,1087.41l0.02,0.02L994.431,1127l-7.071-7.07,40.52-39.52s0-.02.01-0.02,0.02-.01.03-0.02l0.01-.01h0c0.81-.72,2.98.21,4.91,2.12C1034.8,1084.42,1035.75,1086.62,1034.98,1087.41Z" transform="translate(-966 -1020)"/>
+    <path id="Rounded_Rectangle_13" data-name="Rounded Rectangle 13" class="cls-4" d="M1037.32,1063.81l38.99-38.99a4.5,4.5,0,0,1,6.37,6.37l-38.99,38.99A4.5,4.5,0,0,1,1037.32,1063.81Z" transform="translate(-966 -1020)"/>
+    <path id="Rounded_Rectangle_13_copy" data-name="Rounded Rectangle 13 copy" class="cls-4" d="M1045.74,1075.68l40.94-40.94a2.531,2.531,0,0,1,3.58,3.58l-40.94,40.94A2.531,2.531,0,0,1,1045.74,1075.68Z" transform="translate(-966 -1020)"/>
+    <path id="Rounded_Rectangle_14" data-name="Rounded Rectangle 14" class="cls-3" d="M1015.27,1077.1l2.83-2.83a6.011,6.011,0,0,1,8.49,0l14.14,14.14a6.011,6.011,0,0,1,0,8.49l-2.83,2.83a6.011,6.011,0,0,1-8.49,0l-14.14-14.14A6.011,6.011,0,0,1,1015.27,1077.1Z" transform="translate(-966 -1020)"/>
+  </g>
+</svg>

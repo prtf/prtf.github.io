@@ -1,0 +1,64 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-ContactIcons {
+  width: 1.498046875em;
+}
+
+.icon-Lifestyle {
+  width: 1.189453125em;
+}
+
+.icon-ScriptsDownload {
+  width: 0.9423828125em;
+}
+
+.icon-Facebook_head {
+  width: 0.5546875em;
+}
+
+.icon-GooglePlus {
+  width: 0.99609375em;
+}
+
+.icon-LinkedIn {
+  width: 1.068359375em;
+}
+
+.icon-RSS-feed {
+  width: 0.9970703125em;
+}
+
+.icon-Search {
+  width: 1.240234375em;
+}
+
+.icon-Skype {
+  width: 0.998046875em;
+}
+
+.icon-Tel {
+  width: 1.419921875em;
+}
+
+.icon-Twitter_head {
+  width: 1.2666015625em;
+}
+
+.icon-Youtube_head {
+  width: 0.83203125em;
+}
