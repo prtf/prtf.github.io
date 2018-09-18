@@ -388,6 +388,12 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 }
+.features__cover {
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .features__list {
 	list-style-type: none;
 	margin-bottom: 0;
@@ -395,11 +401,12 @@ body {
 	padding: 0;
 	display: flex;
 	justify-content: space-around;
+	width: 50%;
 }
 .features__list li {
 	text-align: center;
 	align-self: baseline;
-	max-width: 25%;
+	width: 50%;
 }
 .features__list li img {
 	max-width: 100%;
@@ -549,7 +556,7 @@ body {
 	background-color: #171f23;
 }
 .plan__wrapper {
-	padding: 55px 195px 95px 180px;
+	padding: 55px 195px 75px 180px;
 }
 .wrapper__price {
 	display: flex;
@@ -873,10 +880,10 @@ body {
 	    padding: 28px 28px 20px 29px;
 	}
 	.portfolio {
-	    padding: 38px 28px 20px 31px;
+	    padding: 38px 28px 20px 29px;
 	}
 	.updates {
-	    padding: 45px 25px 20px 34px;
+	    padding: 45px 28px 20px 29px;
 	}
 	.division_text-wrapper {
 	    padding: 26px 200px 58px 200px;
@@ -935,6 +942,10 @@ body {
 	.loading { 
 		width: 300px;
 	}
+	.features__wrapper {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 }
 @media (max-width: 800px) {
 	.about__wrapper {
@@ -973,5 +984,198 @@ body {
 	    padding-left: 50px;
 	    padding-right: 50px;
 	}
+	.work_category {
+		padding: 0;
+	}
+	.inventory__wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.inventory__human {
+		width: 39%;
+		margin-bottom: 20px;
+	}
+	.inventory__skills {
+		width: 70%;
+	}
+	.blog__photo {
+		flex-direction: column;
+		align-items: center;
+	}
+	.blog__post {
+		max-width: 45%;
+	}
+	.blog__post:not(:last-child) {
+		margin-bottom: 25px;
+	}
+	.wrapper__price {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.price_col {
+		width: 170px;
+		margin-top: 20px;
+	}
 }
+@media (max-width: 710px) {
+	.icon__wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.inventory__human {
+		width: 42%;
+	}
+	.inventory__skills {
+		padding: 29px 15px 41px 25px;
+		width: 75%;
+	}
+	.loading {
+		width: 240px;
+	}
+	.features__wrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.features__cover {
+		flex-wrap: wrap;
+	}
+	.features__list {
+    	width: 100%;
+	}
+	.features__list li {
+		max-width: 150px;
+	}
+	.blog__post {
+		max-width: 50%;
+	}
+	.wrapper_form {
+		padding: 10px 50px 0px 50px;
+	}
+}
+@media (max-width: 640px) {
+	.logo__wrapper {
+		padding: 30px 50px;
+	}
+	.about__wrapper {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.skills {
+		max-width: 60%;
+	}
+	.iframe__wrapper {
+		height: 390px;
+	}
+	.whowe__wrapper {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.inventory__human {
+		width: 47%;
+	}
+	.loading {
+		width: 210px;
+	}
+
+	.blog__wrapper {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.blog__post {
+		max-width: 55%;
+	}
+	.wrapper_field {
+		flex-direction: column
+	}
+	.wrapper_field_name, .wrapper_field_mail {
+		width: 100%;
+	}
+	.wrapper_field_name {
+		margin-bottom: 20px;
+	}
+	.location {
+		height: 300px;
+	}
+	.foot__wrapper {
+		padding: 28px 0 32px 0;
+	}
+}
+@media (max-width: 590px) {
+	.iframe__wrapper {
+		height: 320px;
+	}
+	.division_text-wrapper {
+		padding: 26px 50px 58px 50px;
+	}
+	.work_category {
+		flex-wrap: wrap;
+	}
+	.category-link {
+		margin: 0 10px;
+	}
+	.works_block-slid {
+		height: 390px;
+	}
+	.icon_slider {
+		padding: 80px 65px 50px 65px;
+	}
+	.inventory__human {
+		width: 50%;
+	}
+	.inventory__skills {
+		width: 85%;
+	}
+}
+@media (max-width: 530px) {
+	.icon_slider {
+		padding: 60px 45px 30px 45px;
+	}
+	.slick-prev {
+		left: 10px;
+    	top: 70px;
+	}
+	.slick-next {
+		right: 43px;
+    	top: 70px;
+	}
+	.inventory__human {
+		width: 60%;
+	}
+	.inventory__skills {
+		width: 90%;
+	}
+	.blog__post {
+		max-width: 65%;
+	}
+	.plan__wrapper {
+		padding-left: 35px;
+    	padding-right: 35px;
+	}
+	.wrapper_form {
+		padding: 10px 30px 0px 30px;
+	}
+}
+@media (max-width: 500px) {
+	.inventory__text {
+		margin-bottom: 23px;
+	}
+	.loading {
+		width: 170px;
+	}
+}
+@media (max-width: 460px) {
+	.video__content {
+		padding: 50px 60px 35px 40px;
+	}
+	.works_block-slid {
+		height: 330px;
+	}
+	.inventory__skills {
+		width: 95%;
+	}
+	.blog__post {
+		max-width: 75%;
+	}
+}
+
 font-family: 'Teko', sans-serif;
