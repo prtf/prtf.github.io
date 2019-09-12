@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>jQuery Nice Select | pcvector.net</title>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,600&Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+  <script>
+    var articleLink = '/scripts/forms/476-jquery-nice-select-zamenyaem-standartnyy-select.html';
+  </script>
+  <div class="container">
+    <div class="header">
+      <h1>jQuery Nice Select</h1>
+      <p>Легкий jQuery плагин, который заменяет стандартный select на кастомизированный dropdown.</p>
+      <a href="https://github.com/hernansartorio/jquery-nice-select" class="button light">На GitHub</a>
+    </div>
+    <h2>Использование</h2>
+    <p><strong>1.</strong> Подключить jQuery и плагин.</p> <pre><code class="language-html">&lt;script src=&quot;path/to/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;path/to/jquery.nice-select.js&quot;&gt;&lt;/script&gt;</code></pre>
+    <p><strong>2.</strong> Подключить скомпилированный стиль плагина</p> <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/nice-select.css&quot;&gt;</code></pre>
+    <p>... или, идеально, импортировать SASS исходники (если вы используете SASS) в ваш главный стилевой файл для более удобной кастомизации плагина.</p> <pre><code class="language-scss">@import 'nice-select'; // Or 'nice-select-prefixed'. See 'Notes' section.</code></pre>
+    <p><strong>3.</strong> В заключении инициализировать плагин.</p> <pre><code class="language-js">$(document).ready(function() {
+  $('select').niceSelect();
+});</code></pre>
+    <p>Всё готово. Плагин изменить такой вид:</p>
+    <div class="box"> <select class="ignore">
+        <option value="1">Опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select> </div>
+    <p>...на такой вид:</p>
+    <div class="box">
+      <select>
+        <option value="1">Опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select>
+    </div>
+    <p>Нет настроек (стандартный select не имеет настроек), хотя есть несколько специальных функций описанных ниже.</p>
+    <h2>Отображение текста</h2>
+    <p>Вы можете указать альтернативный текст для каждого option, который будет отображаться в выпадающем списке при выборе этого option.</p>
+    <p>Добавьте атрибут <code class="language-html">data-display</code>, чтобы задать этот альтернативный текст. Например:</p> <pre><code class="language-html">&lt;select&gt;
+  &lt;option data-display=&quot;Выберите опцию&quot;&gt;Ничего&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;Какая-то опция&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Другая опция&lt;/option&gt;
+  &lt;option value=&quot;3&quot; disabled&gt;Опция disabled&lt;/option&gt;
+  &lt;option value=&quot;4&quot;&gt;Еще опция&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+    <div class="box">
+      <select>
+        <option data-display="Выберите опцию">Ничего</option>
+        <option value="1">Какая-то опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select>
+    </div>
+    <h2>Пользовательские классы</h2>
+    <p>Каждый класс, который вы назначаете элементу select, будет скопирован в сгенерированный выпадающий список. Таким образом, вы можете настраивать различные версии оформления, просто добавляя новый CSS.</p>
+    <p>Некоторые примеры оформления включены в CSS плагина:</p>
+    <div class="box">
+      <label>wide</label>
+      <select class="wide">
+        <option data-display="Выберите опцию">Ничего</option>
+        <option value="1">Какая-то опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select>
+    </div>
+    <div class="box">
+      <label class="right">right</label>
+      <select class="right">
+        <option data-display="Выберите опцию">Ничего</option>
+        <option value="1">Какая-то опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select>
+    </div>
+    <div class="box">
+      <label>small</label>
+      <select class="small">
+        <option data-display="Выберите опцию">Ничего</option>
+        <option value="1">Какая-то опция</option>
+        <option value="2">Другая опция</option>
+        <option value="3" disabled>Опция disabled</option>
+        <option value="4">Еще опция</option>
+      </select>
+    </div>
+    <h2>Методы</h2>
+    <h3>update</h3>
+    <p>Обновляет кастомный dropdown, чтобы отразить любые изменения сделанные в оригинальном select.</p> <pre><code class="language-js">$('select').niceSelect('update');</code></pre>
+    <h3>destroy</h3>
+    <p>Удаляет кастомный dropdown и открепляет все обработчики событий.</p> <pre><code class="language-js">$('select').niceSelect('destroy');</code></pre>
+    <h2>Заметки</h2>
+    <ul>
+      <li>
+        <p>Если вы используете autoprefixer, то он добавит все необходимые вендорные префиксы для старых браузеров. Если же вы его не используете, то есть файл <i>nice-select-prefixed.scss</i>, который можете подключить к вашему основному файлу стилей.</p>
+      </li>
+      <li>
+        <p>Иногда может наблюдаться кратковременная "вспышка", может промелькнуть стандартный select (между временем загрузки страницы и запуском скриптов). Это можно пофиксить, скрыв их зарнее в CSS:</p>
+<pre><code class="language-scss">select {
+  display: none;
+}</code></pre>
+        <p>Обратите внимание, что приведенное выше правило, скроет все стандартные select. Если вы применяете плагин только к некоторым select, то правило нужно откорректировать.</p>
+      </li>
+    </ul>
+    <div class="footer">
+      <a href="https://github.com/hernansartorio/jquery-nice-select"
+        class="button light">Посмотреть на GitHub</a>
+      <div class="credit">Made by <a href="http://hernansartorio.com?r=ns">Hernán Sartorio</a> </div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/prism.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('select:not(.ignore)').niceSelect();
+      FastClick.attach(document.body);
+    });
+  </script>
+</body>
+</html>
