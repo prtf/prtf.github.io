@@ -249,47 +249,52 @@ h2 {
       font-size: 2vw; } }
   .section-tours .nav-links .links li {
     font-size: 2em;
-    color: #000; }
-    .section-tours .nav-links .links li > a {
-      color: #fbd341;
+    color: #000;
+    cursor: pointer; }
+    .section-tours .nav-links .links li:not(:last-child) {
       margin-right: 2em; }
+  .section-tours .nav-links .links li.active {
+    color: #fbd341; }
 
-@media (max-width: 899px) {
-  .section-tours .carousel-tours {
-    max-width: 52.2em;
-    margin-left: auto;
-    margin-right: auto; } }
+.section-tours .carousel-tours {
+  opacity: 0;
+  height: 0; }
+  @media (max-width: 899px) {
+    .section-tours .carousel-tours {
+      max-width: 52.2em;
+      margin-left: auto;
+      margin-right: auto; } }
+  .section-tours .carousel-tours .slide-tour {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 1601px) {
+      .section-tours .carousel-tours .slide-tour {
+        margin: 0 3.7em; } }
+    @media (max-width: 1600px) {
+      .section-tours .carousel-tours .slide-tour {
+        margin: 0 10px; } }
+  .section-tours .carousel-tours .slick-next:before, .section-tours .carousel-tours .slick-prev:before {
+    color: #000;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+  .section-tours .carousel-tours .slick-prev:before {
+    content: '\f104'; }
+  .section-tours .carousel-tours .slick-next:before {
+    content: '\f105'; }
 
-.section-tours .carousel-tours .slide-tour {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media (min-width: 1601px) {
-    .section-tours .carousel-tours .slide-tour {
-      margin: 0 3.7em; } }
-  @media (max-width: 1600px) {
-    .section-tours .carousel-tours .slide-tour {
-      margin: 0 10px; } }
-
-.section-tours .carousel-tours .slick-next:before, .section-tours .carousel-tours .slick-prev:before {
-  color: #000;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
-
-.section-tours .carousel-tours .slick-prev:before {
-  content: '\f104'; }
-
-.section-tours .carousel-tours .slick-next:before {
-  content: '\f105'; }
+.section-tours .carousel-tours.active {
+  opacity: 1;
+  height: unset; }
 
 .slide-tour {
   border-radius: 5px;
@@ -432,7 +437,7 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     height: 19em;
-    overflow-x: scroll; }
+    overflow-x: hidden; }
     @media (min-width: 900px) {
       .wrapper-review .review {
         width: 52%;
@@ -819,10 +824,21 @@ nav.menu {
         position: absolute;
         display: none;
         z-index: 1;
-        background-color: rgba(51, 151, 226, 0.8);
-        padding: 1.1em 0;
+        /*background-color: rgba(51,151,226,0.8);*/
+        /*padding: 1.1em 0;*/
         top: 100%;
         max-width: 24em; } }
+    nav.menu > ul .submenu .mCSB_inside > .mCSB_container {
+      margin-right: 0; }
+    nav.menu > ul .submenu .mCSB_scrollTools {
+      display: none;
+      opacity: 0; }
+    nav.menu > ul .submenu li {
+      background-color: rgba(51, 151, 226, 0.8); }
+    nav.menu > ul .submenu li:first-child {
+      padding-top: 11px; }
+    nav.menu > ul .submenu li:last-child {
+      padding-bottom: 11px; }
     nav.menu > ul .submenu li a {
       color: #fff;
       font-size: 1.4em;
@@ -834,6 +850,9 @@ nav.menu {
           display: block; } }
     nav.menu > ul .submenu li:hover > a {
       color: #fbd341; }
+    @media (min-width: 900px) {
+      nav.menu > ul .submenu.submenu-overflow {
+        max-height: 30em; } }
 
 @media (min-width: 900px) {
   .header.fixed {
@@ -853,7 +872,7 @@ nav.menu {
     opacity: 1;
     z-index: 10; }
     nav.menu.active ul {
-      background-color: #fbd341;
+      background-color: #22334d;
       -webkit-transform: translateY(0);
           -ms-transform: translateY(0);
               transform: translateY(0); }
