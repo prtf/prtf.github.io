@@ -55,7 +55,12 @@ $(function() {
 		$('input[name=tel]').inputmask("+38(999) 999-9999");
 		$('select').niceSelect();
 		$('.review').mCustomScrollbar();
-		$('.submenu-overflow').mCustomScrollbar();
+
+		$(window).resize(function() {
+			if($(window).width() > '899') {
+				$('.submenu-overflow').mCustomScrollbar();
+			}
+		});
 
 
 		$('.form-tour').validate({
