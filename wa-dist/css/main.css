@@ -827,14 +827,14 @@ nav.menu {
         /*background-color: rgba(51,151,226,0.8);*/
         /*padding: 1.1em 0;*/
         top: 100%;
-        max-width: 24em; } }
+        max-width: 24em; }
+        nav.menu > ul .submenu li {
+          background-color: rgba(51, 151, 226, 0.8); } }
     nav.menu > ul .submenu .mCSB_inside > .mCSB_container {
       margin-right: 0; }
     nav.menu > ul .submenu .mCSB_scrollTools {
       display: none;
       opacity: 0; }
-    nav.menu > ul .submenu li {
-      background-color: rgba(51, 151, 226, 0.8); }
     nav.menu > ul .submenu li:first-child {
       padding-top: 11px; }
     nav.menu > ul .submenu li:last-child {
